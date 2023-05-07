@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divAbout{
+    width: 1280px;
+    text-align: center;
+}
+
+.h1About{
+    padding-bottom: 10px;
+}
+
+/* Dark Mode */
+
+.divAboutDark{
+    background-color: #000;
+    color: #fff;
+    width: 1280px;
+    padding-bottom: 30px;
+    text-align: center;
+}
