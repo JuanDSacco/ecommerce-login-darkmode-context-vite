@@ -1,19 +1,45 @@
 import React from 'react'
 import { UseApiContext } from '../../../context/ApiContext'
-import ItemDetail from '../../ItemDetail/ItemDetail';
-
+import { useParams } from 'react-router-dom';
+import '../../../css/itemDetailContainer.css'
 
 const ItemDetailContainer = () => {
 
-    const {data} = UseApiContext();
+    const {data,mode} = UseApiContext();
 
+    const {id} = useParams()
+
+    const searchForId = data.find(item => item.id === Number(id))
 
 return (
-    <main>
-        {data.map((data) => (
-            <ItemDetail data={data} key={data.id}/>
-        ))}
-    </main>
+    <>
+    {
+        mode === false ?
+        searchForId && (
+            <div className='detailContainer'>
+                <h1 className='h1Detail'>{searchForId.title}</h1>
+                <img className='imgDetail' src={searchForId.image} alt='imagen del producto'/>
+                <h2 className='h2Detail'>Price: ${searchForId.price}</h2>
+                <p className='pDetail'>{searchForId.description}</p>
+                <div className='divBtnDetail'>
+                <button className='btnDetail'>Comprar</button>
+                </div>
+            </div>
+            )
+        :
+        searchForId && (
+            <div className='detailContainerDark'>
+                <h1 className='h1Detail'>{searchForId.title}</h1>
+                <img className='imgDetailDark' src={searchForId.image} alt='imagen del producto'/>
+                <h2 className='h2Detail'>Price: ${searchForId.price}</h2>
+                <p className='pDetail'>{searchForId.description}</p>
+                <div className='divBtnDetail'>
+                <button className='btnDetailDark'>Comprar</button>
+                </div>
+            </div>
+            )
+    }
+    </>
 )
 }
 
