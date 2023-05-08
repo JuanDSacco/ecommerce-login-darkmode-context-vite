@@ -22,7 +22,7 @@ return (
                 <h2 className='h2Detail'>Price: ${searchForId.price}</h2>
                 <p className='pDetail'>{searchForId.description}</p>
                 <div className='divBtnDetail'>
-                <button className='btnDetail'>Comprar</button>
+                <button className='btnDetail'>Buy Not Functional</button>
                 </div>
             </div>
             )
@@ -34,7 +34,7 @@ return (
                 <h2 className='h2Detail'>Price: ${searchForId.price}</h2>
                 <p className='pDetail'>{searchForId.description}</p>
                 <div className='divBtnDetail'>
-                <button className='btnDetailDark'>Comprar</button>
+                <button className='btnDetailDark'>Buy Not Functional</button>
                 </div>
             </div>
             )

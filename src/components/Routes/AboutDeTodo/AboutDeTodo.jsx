@@ -11,10 +11,10 @@ return (
         {
             mode === false ?
             <div className='divAbout'>
-                <h1 className='h1About'>Nosotros somos Tienda DeTodo</h1>
-                <p>Aprovecho este espacio para comentar características de la App. <br></br>
-                    Fue iniciada con Vite, utilicé Context para proveer la API y el Hook <br></br>
-                    del DarkMode. El siguiente paso es utilizar otro Hook en el Context <br></br>
+                <h1 className='h1About'>About us Tienda DeTodo</h1>
+                <p className='pAbout'>Aprovecho este espacio para comentar características de la App. <br></br>
+                    Fue iniciada con Vite, utilicé Context para proveer la API utilizando Fetch y el Hook <br></br>
+                    para setear el DarkMode. El siguiente paso es utilizar otro Hook en el Context <br></br>
                     para crear un Login y vincularlo a través de Firebase.<br></br>
                     Por último, añadiré un cuarto Hook para darle vida al Ecommerce<br></br>
                     y poder generar órdenes de compra, que se alamacenarán en Firebase.
@@ -22,10 +22,10 @@ return (
             </div>
             :
             <div className='divAboutDark'>
-                <h1 className='h1About'>Nosotros somos Tienda DeTodo</h1>
-                <p>Aprovecho este espacio para comentar características de la App. <br></br>
-                    Fue iniciada con Vite, utilicé Context para proveer la API y el Hook <br></br>
-                    del DarkMode. El siguiente paso es crear otro Hook en el Context <br></br>
+                <h1 className='h1About'>About us Tienda DeTodo</h1>
+                <p className='pAbout'>Aprovecho este espacio para comentar características de la App. <br></br>
+                    Fue iniciada con Vite, utilicé Context para proveer la API utilizando Fetch y el Hook <br></br>
+                    para setear el DarkMode. El siguiente paso es crear otro Hook en el Context <br></br>
                     para crear un Login y vincularlo a través de Firebase.<br></br>
                     Por último, añadiré un cuarto Hook para darle vida al Ecommerce<br></br>
                     y poder generar órdenes de compra, que se alamacenarán en Firebase.

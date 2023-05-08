@@ -10,9 +10,9 @@ return (
     <main className='mainHome'>
         {
             mode === false ?
-            <h1 className='h1Home'>Bienvenidos a Tienda online DeTodo</h1>
+            <h1 className='h1Home'>Welcome to Ecommerce DeTodo</h1>
             :
-            <h1 className='h1HomeDark'>Bienvenidos a Tienda online DeTodo</h1>
+            <h1 className='h1HomeDark'>Welcome to Ecommerce DeTodo</h1>
         }
     </main>
 )

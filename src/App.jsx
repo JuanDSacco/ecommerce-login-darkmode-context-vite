@@ -6,6 +6,7 @@ import ItemDetailContainer from './components/Routes/ItemDetailContainer/ItemDet
 import ItemListContainer from './components/Routes/ItemListContainer/ItemListContainer';
 import ApiProvider from './context/ApiContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Error from './components/Routes/Error/Error';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/products' element={<ItemListContainer/>}/>
         <Route path='/products/:id' element={<ItemDetailContainer/>}/>
         <Route path='/about-us' element={<AboutDeTodo/>}/>
+        <Route path='/error' element={<Error/>}/>
       </Routes>
       </BrowserRouter>
     </ApiProvider>

@@ -18,7 +18,7 @@ return (
         <ul className='ulNavBar'>
             <Link to={'/'}><button><li>Home</li></button></Link>
             <Link to={'products'}><button><li>Products</li></button></Link>
-            <Link to={'/detail'}><button><li>404 Not Found</li></button></Link>
+            <Link to={'/error'}><button><li>Error</li></button></Link>
             <Link to={'/about-us'}><button><li>About DeTodo</li></button></Link>
             <button onClick={() => setMode(true)}><li><FontAwesomeIcon icon={faMoon}/></li></button>
         </ul>
@@ -28,7 +28,7 @@ return (
         <ul className='ulNavBar'>
             <Link to={'/'}><button><li>Home</li></button></Link>
             <Link to={'products'}><button><li>Products</li></button></Link>
-            <Link to={'/detail'}><button><li>404 Not Found</li></button></Link>
+            <Link to={'/error'}><button><li>Error</li></button></Link>
             <Link to={'/about-us'}><button><li>About DeTodo</li></button></Link>
             <button onClick={() => setMode(false)}><li><FontAwesomeIcon icon={faSun}/></li></button>
         </ul>
