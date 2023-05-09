@@ -16,21 +16,19 @@ return (
         mode === false ? 
     <div className='navBarContainer'>
         <ul className='ulNavBar'>
-            <Link to={'/'}><button><li>Home</li></button></Link>
-            <Link to={'products'}><button><li>Products</li></button></Link>
-            <Link to={'/error'}><button><li>Error</li></button></Link>
-            <Link to={'/about-us'}><button><li>About DeTodo</li></button></Link>
-            <button onClick={() => setMode(true)}><li><FontAwesomeIcon icon={faMoon}/></li></button>
+            <Link to={'/'}><button className='btnNavBar'><li>Home</li></button></Link>
+            <Link to={'products'}><button className='btnNavBar'><li>Products</li></button></Link>
+            <Link to={'/about-us'}><button className='btnNavBar'><li>About DeTodo</li></button></Link>
+            <button className='btnNavBar' onClick={() => setMode(true)}><li><FontAwesomeIcon icon={faMoon}/></li></button>
         </ul>
     </div>
     :
     <div className='navBarContainerDark'>
         <ul className='ulNavBar'>
-            <Link to={'/'}><button><li>Home</li></button></Link>
-            <Link to={'products'}><button><li>Products</li></button></Link>
-            <Link to={'/error'}><button><li>Error</li></button></Link>
-            <Link to={'/about-us'}><button><li>About DeTodo</li></button></Link>
-            <button onClick={() => setMode(false)}><li><FontAwesomeIcon icon={faSun}/></li></button>
+            <Link to={'/'}><button className='btnNavBarDark'><li>Home</li></button></Link>
+            <Link to={'products'}><button className='btnNavBarDark'><li>Products</li></button></Link>
+            <Link to={'/about-us'}><button className='btnNavBarDark'><li>About DeTodo</li></button></Link>
+            <button className='btnNavBarDark' onClick={() => setMode(false)}><li><FontAwesomeIcon icon={faSun}/></li></button>
         </ul>
     </div>
     }

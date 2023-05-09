@@ -17,6 +17,11 @@
     list-style: none;
 }
 
+.btnNavBar{
+    background-color: #000;
+    color: #fff;
+}
+
 /* Dark Mode */
 
 .navBarContainerDark{
@@ -24,4 +29,9 @@
     color: #fff;
     padding-bottom: 50px;
     padding-top: 30px;
+}
+
+.btnNavBarDark{
+    background-color: #fff;
+    color: #000;
 }

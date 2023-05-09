@@ -20,7 +20,6 @@ function App() {
         <Route path='/products' element={<ItemListContainer/>}/>
         <Route path='/products/:id' element={<ItemDetailContainer/>}/>
         <Route path='/about-us' element={<AboutDeTodo/>}/>
-        <Route path='/error' element={<Error/>}/>
       </Routes>
       </BrowserRouter>
     </ApiProvider>
