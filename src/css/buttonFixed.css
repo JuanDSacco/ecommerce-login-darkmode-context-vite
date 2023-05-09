@@ -2,11 +2,12 @@
     position: fixed;
     background-color: #000;
     color: #fff;
+    bottom: 150px;
+    right: 50px;
 }
 
 .divBtnFixed{
     height: 50px;
-    padding-left: 50px;
 }
 
 /* Dark Mode */
@@ -15,10 +16,11 @@
     position: fixed;
     background-color: #fff;
     color: #000;
+    bottom: 150px;
+    right: 50px;
 }
 
 .divBtnFixedDark{
     height: 50px;
-    padding-left: 50px;
     background-color: #000;
 }
