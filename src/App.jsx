@@ -6,7 +6,6 @@ import ItemDetailContainer from './components/Routes/ItemDetailContainer/ItemDet
 import ItemListContainer from './components/Routes/ItemListContainer/ItemListContainer';
 import ApiProvider from './context/ApiContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Error from './components/Routes/Error/Error';
 
 function App() {
 
